@@ -1,6 +1,6 @@
 <?PHP
 # Account Maker Config
-$config['site']['serverPath'] = "/root/Documents/nto/Servidor BASE NTO MARCOS/";
+$config['site']['serverPath'] = "/home/marcosubuntu/Downloads/GITNTO/SERV_BASE_NTO/";
 $config['site']['useServerConfigCache'] = false;
 $config['site']['worlds'] = array(0 => 'NTO');
 $towns_list[0] = array(1 => 'BaiakPvp');

@@ -58,11 +58,11 @@ body
 	margin: auto;
 }
 
-#logo {
-	background: url('../_img/background/NARUTO.png') no-repeat;
-	height: 300px;
-	width: 355px;
-	margin-top: -30px;
+#logotxt {
+	background: url('../_img/background/logotxt.png') no-repeat;
+	height: 200px;
+	width: 280px;
+	margin-top: 50px;
 	margin-left: 0px;
 		float: left;
 
@@ -82,7 +82,7 @@ body
 	height: 250px;
 	width: 160px;
 	margin-top: 50px;
-	margin-left: 140px;
+	margin-left: 250px;
 		float: left;
 
 }

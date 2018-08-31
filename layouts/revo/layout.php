@@ -116,8 +116,7 @@ var FB_ForceReload = 0;
 <!--//END Queries//-->
 	<div id="page">
 		<div id="bastao"></div>
-		<div id="logo"></div>
-				<div id="gran"></div>
+		<div id="logotxt"></div>
 
 
 		<div id="content">
