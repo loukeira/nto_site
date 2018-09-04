@@ -3,10 +3,15 @@
 
 $main_content .= '<div>
 		<center><img src="layouts/revo/_img/background/youtube.png" height="140" width="185"></center><font size="18" face="Arial"><b><center> Sistemas NTO GRAN </b></font></center>
-<p><br />
+<br>
+<br>
+<br>
 <center><font size="3" face="Arial"><font color="#CD3700"> Aqui estarão disponíveis os vídeos dos sistemas (Exclusivos ou não) do NTO GRAN!
 Sempre que sair algum sistema novo, a pagina será atualizada!<br>
 Venha curtir com a gente! NTO GRAN!</font></font></center>
+<br>
+<br>
+<br>
 
 
 <center><font size="2"><font color="#CD3700"><img alt="" src="layouts/revo/_img/background/youtube.png" height="40" width="40"/>&nbsp;<b>
@@ -14,6 +19,9 @@ SISTEMA PAPER BOMB!</b><br/></font></font>
 <iframe width="360" height="215" src="https://www.youtube.com/embed/oYpKN-E6XtY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 
 
+<center><font size="2"><font color="#CD3700"><img alt="" src="layouts/revo/_img/background/youtube.png" height="40" width="40"/>&nbsp;<b>
+SISTEMA PAPER BOMB!</b><br/></font></font>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/oYpKN-E6XtY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 
 
 

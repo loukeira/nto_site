@@ -194,7 +194,7 @@ var FB_ForceReload = 0;
 				</div>
 				<div id="menu_links">
 					<ul>
-						<li><a href="?subtopic=latestnews">&nbsp;&raquo; Latest news</a></li>
+						<li><a href="?subtopic=latestnews"><font color="orange">&nbsp;&raquo; Latest news</font></a></li>
 						<li><a href="?subtopic=sistemas"><font color="red">&nbsp;&raquo;Sistemas GRAN!</font></a></li>
 						<li><a href="?subtopic=archive">&nbsp;&raquo; News archive</a></li>
 						<li><a href="?subtopic=bugtracker">&nbsp;&raquo; Bug Tracker</a></li>
