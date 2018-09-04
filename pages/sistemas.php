@@ -14,14 +14,14 @@ Venha curtir com a gente! NTO GRAN!</font></font></center>
 <br>
 
 
-<center><font size="2"><font color="#CD3700"><img alt="" src="layouts/revo/_img/background/youtube.png" height="40" width="40"/>&nbsp;<b>
-SISTEMA PAPER BOMB!</b><br/></font></font>
-<iframe width="360" height="215" src="https://www.youtube.com/embed/oYpKN-E6XtY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+<center><font size="2"><font color="#CD3700"><img alt="" src="layouts/revo/_img/background/youtube.png" height="20" width="20"/>&nbsp;<b>
+<a href="http://www.yahoo.com"> SISTEMA PAPER BOMB!   [1]</b></font></font></a>
 
 
-<center><font size="2"><font color="#CD3700"><img alt="" src="layouts/revo/_img/background/youtube.png" height="40" width="40"/>&nbsp;<b>
-SISTEMA PAPER BOMB!</b><br/></font></font>
-<iframe width="360" height="215" src="https://www.youtube.com/embed/oYpKN-E6XtY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+
+<center><font size="2"><font color="#CD3700"><img alt="" src="layouts/revo/_img/background/youtube.png" height="20" width="20"/>&nbsp;<b>
+<a href="http://www.yahoo.com"> SISTEMA DOIS   [2]</b><br/></font></font></a>
+
 
 
 
