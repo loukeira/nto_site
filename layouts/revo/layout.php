@@ -134,8 +134,8 @@ var FB_ForceReload = 0;
 						<div id='menu_top_acc'>
 							<a href="?subtopic=accountmanagement">
 								<div class='fadehover'>
-									<img src='layouts/revo/_img/menu/account_1a.png' alt='Account' class='a' />
-									<img src='layouts/revo/_img/menu/account_1b.png' alt='Account' class='b' />
+									<img src='layouts/revo/_img/menu/edit_b.png' alt='Account' class='a' />
+									<img src='layouts/revo/_img/menu/edit_a.png' alt='Account' class='b' />
 								</div>
 							</a>
 						</div>
@@ -221,6 +221,17 @@ var FB_ForceReload = 0;
 								<li><a href="?subtopic=lostaccount"><b>&nbsp;&raquo; Lost Account</b></a></li>';}?>
 								<li><a href="?subtopic=tibiarules"><b>&nbsp;&raquo; Server Rules</b></a></li>
 					</ul>
+				</div>
+					<div class="clean_5"></div>
+				
+				<div id="menu-label">
+					<div id="icon-sistemas"></div>
+					<div id="text-sistemas"></div>
+				</div>
+				<div id="menu_links">
+					<li><a href="?subtopic=highscores">&nbsp;&raquo; Highscores</a></li>
+
+					<li><a href="?subtopic=team">&nbsp;&raquo; <font color="green">Team</font></a></li>
 				</div>
 				
 				<div class="clean_5"></div>

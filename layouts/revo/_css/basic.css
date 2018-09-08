@@ -6,7 +6,7 @@
   color: #5A2800;
   border-left: 2px solid #3a3738;
   border-right: 2px solid #3a3738;
-  background-color: #debb9d;
+  background-color: #968C7C;
   background-repeat: no-repeat;
   overflow: visible;
 }
@@ -14,8 +14,8 @@
 #content .BoxContent {
   font-family: Verdana, Arial, Times New Roman, sans-serif;
   font-size: 9pt;
-  background-color: #f9f1c0;
-  color: #5A2800;
+  background-color: #968C7C;
+  color: #968C7C;
   min-height: 395px;
   height: auto !important;
   height: 415px;
@@ -186,14 +186,14 @@
 /* TABLEHEADER DECORATION */
 .TableContainer .CaptionContainer {
   position: relative;
-  background-color: #4b4b4b !important;
+  background-color: #968C7C !important;
   height: 100%;
   width: 100%;
   text-align: left;
 }
 .TableContainer .CaptionContainer .CaptionInnerContainer {
 	position: relative;
-  background-color: #4b4b4b;
+  background-color: #968C7C;
   width: 100%;
   height: 100%;
   padding-top: 3px;
@@ -286,11 +286,11 @@
 }
 /* TABLE CONTENT */
 .TableContentContainer {
-  border: 1px solid #4b4b4b;
+  border: 1px solid #968C7C;
   position: relative;
   margin-right: 4px;
   height: 100%;
-  background-color: #202229;
+  background-color: #968C7C;
   padding: 0px;
 }
 .TableContent {
@@ -306,7 +306,7 @@
 /* INNERLYOUT 1 */
 .TableContainer .Table1 {
   width: 100%;
-  background-color: #202229;
+  background-color: #070707;
   border: 2px solid #55636c;
 }
 .TableContainer .Table1 .InnerTableContainer {
@@ -356,7 +356,7 @@
 /* INNERLYOUT 4 */
 .TableContainer .Table4 {
   width: 100%;
-  border: 2px solid #55636c;
+  border: 2px solid ;
   background-color: #1b1e26;
 }
 .TableContainer .Table4 .InnerTableContainer {

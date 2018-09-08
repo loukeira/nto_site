@@ -33,7 +33,7 @@ body
 {
 	background: #000000 url('../_img/background/background.jpg') top center no-repeat;
 	font-size: 13px;
-	color: #6B0A53;
+	color: #3d2a47;
 	font-family: Arial,Georgia,Comic Sans;
 	padding: 0px;
 	margin: 0px;
@@ -82,7 +82,7 @@ body
 	height: 250px;
 	width: 160px;
 	margin-top: 50px;
-	margin-left: 250px;
+	margin-left: 50px;
 		float: left;
 
 }
@@ -234,7 +234,7 @@ margin-left: 5px;
 margin-bottom: 35px;
 }
 
-#icon-news, #icon-account, #icon-community, #icon-library, #icon-shop, #icon-toplevel, #icon-topguilds, #icon-search, #icon-info  {
+#icon-news, #icon-account, #icon-community,#icon-sistemas, #icon-library, #icon-shop, #icon-toplevel, #icon-topguilds, #icon-search, #icon-info  {
 width:64px;
 height:64px;
 float:left;
@@ -244,6 +244,8 @@ margin:-30px 5px 0 0px;
 #icon-news { background:url("") no-repeat scroll 0 0 transparent; }
 #icon-account { background:url("") no-repeat scroll 0 0 transparent; }
 #icon-community { background:url("") no-repeat scroll 0 0 transparent; }
+#icon-sistemas { background:url("") no-repeat scroll 0 0 transparent; }
+
 #icon-library { background:url("") no-repeat scroll 0 0 transparent; }
 #icon-shop { background:url("") no-repeat scroll 0 0 transparent; }
 #icon-toplevel { background:url("") no-repeat scroll 0 0 transparent; }
@@ -251,7 +253,7 @@ margin:-30px 5px 0 0px;
 #icon-search { background:url("") no-repeat scroll 0 0 transparent; }
 #icon-info { background:url("") no-repeat scroll 0 0 transparent; }
 
-#text-news, #text-account, #text-community, #text-library, #text-shop {
+#text-news, #text-account, #text-community, #text-library, #text-shop, #text-sistemas{
     margin-left: -20px;
     height: 71px;
     width: 200px;
@@ -264,6 +266,7 @@ margin:-30px 5px 0 0px;
 
 #text-news { background: url("../images/menu/label-news.png") no-repeat; }
 #text-account { background: url("../images/menu/label-account.png") no-repeat; }
+#text-sistemas { background: url("../images/menu/label-sistemas.png") no-repeat; }
 #text-community { background: url("../images/menu/label-community.png") no-repeat; }
 #text-library { background: url("../images/menu/label-library.png") no-repeat; }
 #text-shop { background: url("../images/menu/label-shop.png") no-repeat; }
@@ -311,7 +314,7 @@ margin:-30px 5px 0 0px;
 }
 
 #menu_links li a:hover {
-	color:#CEA74A;
+	color:#070707;
 	display:block;
 	text-decoration:none;
 	padding: 0px 0px 0px 20px;
