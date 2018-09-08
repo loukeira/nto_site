@@ -44,13 +44,7 @@ document.oncontextmenu=new Function("return false")
 <!--CSS'S-->
 <link href="<?PHP echo $layout_name; ?>/css/basic_d.css" rel="stylesheet" type="text/css">
 <link href="<?PHP echo $layout_name; ?>/css/news.css" rel="stylesheet" type="text/css">
-<!--JS--> 
-<script id="twitter-wjs" src="<?PHP echo $layout_name; ?>/js/widgets.js"></script>
-<script id="facebook-jssdk" async src="<?PHP echo $layout_name; ?>/js/all.js"></script>
-<script type="text/javascript" src="<?PHP echo $layout_name; ?>/js/jquery.js"></script>
-<script type="text/javascript" src="<?PHP echo $layout_name; ?>/js/ajaxcip.js"></script>
-<script type="text/javascript" src="<?PHP echo $layout_name; ?>/js/generic.js"></script>
-<script type="text/javascript" src="<?PHP echo $layout_name; ?>/js/create_character.js"></script>
+
 <script type="text/javascript">  
 var loginStatus=0; 
 loginStatus='<?PHP if($logged){ ?>true<?PHP }else{ ?>false<?PHP } ?>';  
