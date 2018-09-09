@@ -191,7 +191,11 @@ function showPost($topic, $text, $smile)
 														<div class="NewsHeadlineBackground" style="background-image:url(' . $layout_name . '/images/global/content/newsheadline_background.gif)">
 															<table border="0">
 																<tr>
-																	<div class="MostPowerfullGuilds">Most Powerfull Guilds</div>						
+
+											
+
+<center><font color="#CD3700"><img alt="" src="layouts/revo/_img/content/guilds.png" height="29" width="628"/>&nbsp;</a></center>
+
 																</tr>
 															</table>
 														</div>
@@ -207,9 +211,10 @@ function showPost($topic, $text, $smile)
 											foreach($guildsPower as $guildp) {
 												$main_content .= '
 													<td style="width: 25%; text-align: center;">
-														<a href="?subtopic=guilds&action=view&GuildName=' . $guildp['name'] . '"><img src="guild_image.php?id=' . $guildp['id'] . '" width="64" height="64" border="0"/><br />' . $guildp['name'] . '</a><br />' . $guildp['frags_semana'] . ' kills
+														<a href="?subtopic=guilds&action=show&guild=' . $guildp['id'] . '"><img src="guild_image.php?id=' . $guildp['id'] . '" width="64" height="64" border="0"/><br />' . $guildp['name'] . '</a><br />' . $guildp['frags_semana'] . ' kills
 													</td>';
 											}
+											http://127.0.0.1:81/?subtopic=guilds&action=show&guild=3
 												$main_content .= '
 																			</tr>
 																		</table>

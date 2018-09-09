@@ -13,6 +13,9 @@ Venha curtir com a gente! NTO GRAN!</font></font></center>
 <br>
 <br>
 
+<center><font size="2"><font color="#CD3700"><img alt="" src="layouts/revo/_img/background/youtube.png" height="20" width="20"/>&nbsp;<b>
+<a href="http://ntogran.com/?subtopic=snowballwar"> EVENTO SNOWBALL </b></font></font></a>
+
 
 <center><font size="2"><font color="#CD3700"><img alt="" src="layouts/revo/_img/background/youtube.png" height="20" width="20"/>&nbsp;<b>
 <a href="http://www.yahoo.com"> SISTEMA PAPER BOMB!   [1]</b></font></font></a>

@@ -112,6 +112,20 @@ var FB_ForceReload = 0;
 		<div id="bastao"></div>
 		<div id="logotxt"></div>
 
+<!--
+<audio id="audio" autoplay>
+   <source src="1temporada.mp3" type="audio/mp3" volume = "20" />
+</audio> -->
+
+<div style="position:absolute; top:250px; left:160px;">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>Heros Come Back</title>
+	<audio controls="">
+		&nbsp;&nbsp;&nbsp;&nbsp;<source src="1temporada.mp3" type="audio/mp3" >
+	</audio>
+</div>
+<!--<embed height="60" type="audio/mp3" width="120" src="1temporada.mp3" volume="40" loop="true" autostart="false" /> -->
+
 
 		<div id="content">
 			<div id="menu_top">
@@ -188,10 +202,11 @@ var FB_ForceReload = 0;
 				</div>
 				<div id="menu_links">
 					<ul>
-						<li><a href="?subtopic=latestnews"><font color="orange">&nbsp;&raquo; Latest news</font></a></li>
-						<li><a href="?subtopic=sistemas"><font color="red">&nbsp;&raquo;Sistemas GRAN!</font></a></li>
+						<li><a href="?subtopic=latestnews"><font color="orange">&nbsp;&raquo; Latest news</font><img src="./layouts/revo/_img/content/new.gif"></a></li>
 						<li><a href="?subtopic=archive">&nbsp;&raquo; News archive</a></li>
 						<li><a href="?subtopic=bugtracker">&nbsp;&raquo; Bug Tracker</a></li>
+						<li><a href="?subtopic=serverinfo">&nbsp;&raquo; FAQ</a></li>
+						<li><a href="?subtopic=downloads">&nbsp;&raquo; Downloads <img src="./layouts/revo/_img/content/hot.gif"></a></li>
 
 					</ul>
 				</div>
@@ -223,11 +238,28 @@ var FB_ForceReload = 0;
 					<div id="text-sistemas"></div>
 				</div>
 				<div id="menu_links">
-					<li><a href="?subtopic=highscores">&nbsp;&raquo; Highscores</a></li>
+					<li><a href="?subtopic=sistemas"><font color="red">&nbsp;&raquo; Exclusivos</font> <img src="./layouts/revo/_img/content/hot.gif"></a></li>
+					<li><a href="?subtopic=tasks">&nbsp;&raquo; Tasks</a></li>
 
 					<li><a href="?subtopic=team">&nbsp;&raquo; <font color="green">Team</font></a></li>
 				</div>
 				
+
+				<div class="clean_5"></div>
+				
+				<div id="menu-label">
+					<div id="icon-events"></div>
+					<div id="text-events"></div>
+				</div>
+				<div id="menu_links">
+					<li><a href="?subtopic=sistemas"><font color="red">&nbsp;&raquo; Event1</font></a></li>
+					<li><a href="?subtopic=tasks">&nbsp;&raquo; Event2</a></li>
+
+					<li><a href="?subtopic=team">&nbsp;&raquo; Event3 </a></li>
+				</div>
+				
+
+
 				<div class="clean_5"></div>
 				
 				<div id="menu-label">
@@ -236,23 +268,25 @@ var FB_ForceReload = 0;
 				</div>
 				<div id="menu_links">
 					<li><a href="?subtopic=characters">&nbsp;&raquo; Characters</a></li>
-					<li><a href="?subtopic=whoisonline">&nbsp;&raquo; Who is Online?</a></li>
+					<li><a href="?subtopic=whoisonline">&nbsp;&raquo;  <font color="green">Who is Online?</font></a></li>
 					<li><a href="?subtopic=highscores">&nbsp;&raquo; Highscores</a></li>
 					<li><a href="?subtopic=guilds">&nbsp;&raquo; Guilds</a></li>
 					<li><a href="?subtopic=forum">&nbsp;&raquo; Forum</a></li>
 					<li><a href="?subtopic=team">&nbsp;&raquo; <font color="green">Team</font></a></li>
 				</div>
 				
-				<div class="clean_5"></div>
+
+<!-- 				<div class="clean_5"></div>
 				
 				<div id="menu-label">
 					<div id="icon-library"></div>
 					<div id="text-library"></div>
 				</div>
 				<div id="menu_links">
-					<li><a href="?subtopic=serverinfo">&nbsp;&raquo; FAQ</a></li>
-					<li><a href="?subtopic=downloads">&nbsp;&raquo; Downloads</a></li>
-				</div>
+
+				</div> -->
+
+			
 				
 				<div class="clean_5"></div>
 				
@@ -262,7 +296,7 @@ var FB_ForceReload = 0;
 				</div>
 				<div id="menu_links">
 						<li><a href="?subtopic=buypoints&system=homepay"><b><font color="red">&nbsp;&raquo; Buy Points</font></b></a></li>
-						<li><a href="?subtopic=shopsystem"><b><font color="green">&nbsp;&raquo; Shop Offers</font></b></a></li>
+						<li><a href="?subtopic=shopsystem"><b><font color="green">&nbsp;&raquo; Shop Offers</font></b> <img src="./layouts/revo/_img/content/hot.gif"></a></li>
 						<?PHP
 							if($logged)
 								echo '<li><a href="?subtopic=shopsystem&action=show_history"><b>&nbsp;&raquo; Trans History</b></a></li>';
@@ -332,8 +366,11 @@ var FB_ForceReload = 0;
 			</div>
 		</div>
 		
+
 		
-		<div id="content_bot"></div>
+		<div id="content_copyright"></div>
+<!-- 		<div id="content_copyright"></div>
+ -->
 	</div>
 </body>
 </html>
