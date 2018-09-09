@@ -214,7 +214,6 @@ function showPost($topic, $text, $smile)
 														<a href="?subtopic=guilds&action=show&guild=' . $guildp['id'] . '"><img src="guild_image.php?id=' . $guildp['id'] . '" width="64" height="64" border="0"/><br />' . $guildp['name'] . '</a><br />' . $guildp['frags_semana'] . ' kills
 													</td>';
 											}
-											http://127.0.0.1:81/?subtopic=guilds&action=show&guild=3
 												$main_content .= '
 																			</tr>
 																		</table>

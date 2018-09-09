@@ -21,7 +21,16 @@ if(!empty($name))
 			$main_content .= '<span style="color:red">[BANNED]</span>';
 		if($player->isNamelocked())
 			$main_content .= '<span style="color:red">[NAMELOCKED]</span>';
-		$main_content .= '<br /><img src="' . $config['site']['outfit_images_url'] . '?id=' . $player->getLookType() . '&addons=' . $player->getLookAddons() . '&head=' . $player->getLookHead() . '&body=' . $player->getLookBody() . '&legs=' . $player->getLookLegs() . '&feet=' . $player->getLookFeet() . '" alt="" /></td></tr>';
+
+		$vocation= $player->getVocation();
+		$looktyp= $player->getLookType();
+
+
+		$main_content .= '<br/> '.$looktyp.' </td></tr>';
+
+		//$main_content .= '<br /><img src="gifs/'.$outfit.'.gif" widht="64" height="64" alt="" /></td></tr>';
+
+		// $main_content .= '<br /><img src="' . $config['site']['outfit_images_url'] . '?id=' . $player->getLookType() . '&addons=' . $player->getLookAddons() . '&head=' . $player->getLookHead() . '&body=' . $player->getLookBody() . '&legs=' . $player->getLookLegs() . '&feet=' . $player->getLookFeet() . '" alt="" /></td></tr>';
 
 		$playerNamelocks = new DatabaseList('PlayerNamelocks');
 		$filter = new SQL_Filter(new SQL_Field('player_id'), SQL_Filter::EQUAL, $player->getID());

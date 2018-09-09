@@ -252,7 +252,7 @@ var FB_ForceReload = 0;
 					<div id="text-events"></div>
 				</div>
 				<div id="menu_links">
-					<li><a href="?subtopic=sistemas"><font color="red">&nbsp;&raquo; Event1</font></a></li>
+					<li><a href="?subtopic=sistemas"><font color="red">&nbsp;&raquo; Event1</font><img src="./layouts/revo/_img/content/new2.gif"></a></li>
 					<li><a href="?subtopic=tasks">&nbsp;&raquo; Event2</a></li>
 
 					<li><a href="?subtopic=team">&nbsp;&raquo; Event3 </a></li>
