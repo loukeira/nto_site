@@ -211,7 +211,7 @@ var FB_ForceReload = 0;
 						<li><a href="?subtopic=archive">&nbsp;&raquo; News archive</a></li>
 						<li><a href="?subtopic=bugtracker">&nbsp;&raquo; Bug Tracker</a></li>
 						<li><a href="?subtopic=serverinfo">&nbsp;&raquo; FAQ</a></li>
-						<li><a href="?subtopic=downloads">&nbsp;&raquo; Downloads <img src="./layouts/revo/_img/content/hot.gif"></a></li>
+						<li><a href="?subtopic=downloads">&nbsp;&raquo;<font color="red"> DOWNLOAD </font> <img src="./layouts/revo/_img/content/hot.gif"></a></li>
 
 					</ul>
 				</div>
