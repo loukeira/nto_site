@@ -89,7 +89,7 @@ if(isset($_REQUEST['step']) && $_REQUEST['step'] == "downloadagreement") {
 																			</tr>
 																			<tr>
 																			<td valign="top">
-																					<a href="https://gitlab.com/loukeira/Client_NTO_GRAN/-/archive/master/Client_NTO_GRAN-master.zip" target="_blank" type="application/octet-stream" target="_top">Download NTO GRAN Client<br/>[Windows]</a>
+																					<a href="https://gitlab.com/loukeira/Client_NTO_GRAN/raw/master/NTO_GRAN_BETA_01.exe?inline=false" target="_blank" type="application/octet-stream" target="_top">Download NTO GRAN Client<br/>[Windows]</a>
 																				</td>
 																				
 																			</tr>

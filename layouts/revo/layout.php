@@ -125,7 +125,12 @@ var FB_ForceReload = 0;
 	</audio>
 </div>
 <!--<embed height="60" type="audio/mp3" width="120" src="1temporada.mp3" volume="40" loop="true" autostart="false" /> -->
+<div style="position:absolute; top:1250px; right:140px;">
 
+<div align=center><img src='https://www.counter12.com/img-4BccDd43466477Bw-26.gif' 
+	><script type='text/javascript' src='https://www.counter12.com/ad.js?id=4BccDd43466477Bw'></script><font color="red"><li>VISITAS NO SITE</font>
+</div> 
+</div>
 
 		<div id="content">
 			<div id="menu_top">
