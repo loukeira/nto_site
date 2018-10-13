@@ -35,12 +35,13 @@ document.oncontextmenu=new Function("return false")
 <meta charset="utf-8">
 <title><?PHP echo $title ?></title>
 <meta name="description" content="Tibia is a free massively multiplayer online role-playing game (MMORPG)">
-<meta name="author" content="Felipe">
+<meta name="author" content="Marcos">
 <meta http-equiv="content-language" content="en">
 <meta name="keywords" content="free online rpg, free mmorpg, mmorpg, mmog, online role playing game, online multiplayer game, internet game, online rpg, rpg">
 <!--ICON-->
-<link rel="shortcut icon" href="<?PHP echo $layout_name; ?>/images/general/favicon.ico" type="image/x-icon">
-<link rel="icon" href="<?PHP echo $layout_name; ?>/images/general/favicon.ico" type="image/x-icon">
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <!--CSS'S-->
 <link href="<?PHP echo $layout_name; ?>/css/basic_d.css" rel="stylesheet" type="text/css">
 <link href="<?PHP echo $layout_name; ?>/css/news.css" rel="stylesheet" type="text/css">
@@ -125,8 +126,7 @@ var FB_ForceReload = 0;
 	</audio>
 </div>
 <!--<embed height="60" type="audio/mp3" width="120" src="1temporada.mp3" volume="40" loop="true" autostart="false" /> -->
-<div style="position:absolute; top:1250px; right:140px;">
-
+<div style="position:absolute; top:1050px; right:140px;">
 <div align=center><img src='https://www.counter12.com/img-4BccDd43466477Bw-26.gif' 
 	><script type='text/javascript' src='https://www.counter12.com/ad.js?id=4BccDd43466477Bw'></script><font color="red"><li>VISITAS NO SITE</font>
 </div> 
@@ -211,6 +211,7 @@ var FB_ForceReload = 0;
 						<li><a href="?subtopic=archive">&nbsp;&raquo; News archive</a></li>
 						<li><a href="?subtopic=bugtracker">&nbsp;&raquo; Bug Tracker</a></li>
 						<li><a href="?subtopic=serverinfo">&nbsp;&raquo; FAQ</a></li>
+						<li><a href="https://discordapp.com/invite/nmz2gz?utm_source=Discord%20Widget&utm_medium=Connect">&nbsp;&raquo;<font color="blue"> DISCORD</font> <img src="./layouts/revo/_img/content/discord2.png"> </a></li>
 						<li><a href="?subtopic=downloads">&nbsp;&raquo;<font color="red"> DOWNLOAD </font> <img src="./layouts/revo/_img/content/hot.gif"></a></li>
 
 					</ul>
@@ -370,6 +371,8 @@ var FB_ForceReload = 0;
 				</div>
 			</div>
 		</div>
+
+
 		
 		<!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -384,6 +387,7 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
 
 		
 		<div id="content_copyright"></div>
