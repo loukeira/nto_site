@@ -1,6 +1,6 @@
 <?PHP
 # Account Maker Config
-$config['site']['serverPath'] = "/home/SERV_BASE_NTO/";
+$config['site']['serverPath'] = "/home/nto/SERV_BASE_NTO/";
 #$config['site']['serverPath'] = "/home/marcosubuntu/Downloads/GITNTO/SERV_BASE_NTO/";
 $config['site']['useServerConfigCache'] = false;
 $config['site']['worlds'] = array(0 => 'NTO');
