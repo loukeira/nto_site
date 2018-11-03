@@ -1,10 +1,10 @@
 <?PHP
 # Account Maker Config
-$config['site']['serverPath'] = "/home/nto/SERV_BASE_NTO/";
+$config['site']['serverPath'] = "/home/SERV_BASE_NTO/";
 #$config['site']['serverPath'] = "/home/marcosubuntu/Downloads/GITNTO/SERV_BASE_NTO/";
 $config['site']['useServerConfigCache'] = false;
 $config['site']['worlds'] = array(0 => 'NTO');
-$towns_list[0] = array(1 => 'BaiakPvp');
+$towns_list[0] = array(1 => 'Konoha');
 
 $config['site']['outfit_images_url'] = 'images/animated/animoutfit.php';
 $config['site']['item_images_url'] = '/images/items/';
@@ -16,7 +16,7 @@ $config['site']['limitDeath'] = 10;
 $config['site']['levelVideo'] = 150;
 
 # Create Account Options
-$config['server_name'] = 'Gran Baiak';
+$config['server_name'] = 'NTO GRAN';
 $config['site']['one_email'] = false;
 $config['site']['create_account_verify_mail'] = false;
 $config['site']['verify_code'] = true;
