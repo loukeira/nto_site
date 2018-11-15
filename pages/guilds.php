@@ -173,17 +173,17 @@ if($action == 'show')
 		$guild_owner = $guild->getOwner();
 		if($guild_owner->isLoaded())
 			$guild_owner = $guild_owner->getName();
-		$main_content .= '<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR>
+		$main_content .= '<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=80%><TR>
 		<TD><IMG SRC="'.$layout_name.'/images/blank.gif" WIDTH=10 HEIGHT=1 BORDER=0></TD><TD>
 		<TABLE BORDER=0 WIDTH=100%>
 		<TR><TD WIDTH=64><IMG SRC="' . $guild->getGuildLogoLink() . '" WIDTH=64 HEIGHT=64></TD>
-		<TD ALIGN=center WIDTH=100%><H1>'.htmlspecialchars($guild->getName()).'</H1></TD>
+		<TD ALIGN=center WIDTH=80%><H1>'.htmlspecialchars($guild->getName()).'</H1></TD>
 		<TD WIDTH=64><IMG SRC="' . $guild->getGuildLogoLink() . '" WIDTH=64 HEIGHT=64></TD></TR>
 		</TABLE><BR>'.$description.'<BR><BR><a href="?subtopic=characters&name='.urlencode($guild_owner).'"><b>'.htmlspecialchars($guild_owner).'</b></a> is guild leader of <b>'.htmlspecialchars($guild->getName()).'</b>.<BR>The guild was founded on '.htmlspecialchars($config['server']['serverName']).' on '.date("j F Y", $guild->getCreationData()).'.';
 		if($guild_leader)
 			$main_content .= '&nbsp;&nbsp;&nbsp;<a href="?subtopic=guilds&action=manager&guild='.$guild_id.'"><IMG SRC="'.$layout_name.'/images/buttons/sbutton_manageguild.png" BORDER=0 WIDTH=120 HEIGHT=18 alt="Manage Guild"></a>';
 		$main_content .= '<BR><BR>
-		<TABLE BORDER=0 CELLSPACING=1 CELLPADDING=4 WIDTH=100%>
+		<TABLE BORDER=0 CELLSPACING=1 CELLPADDING=4 WIDTH=80%>
 		<TR BGCOLOR='.$config['site']['vdarkborder'].'><TD COLSPAN=3 CLASS=white><B>Guild Members</B></TD></TR>
 		<TR BGCOLOR='.$config['site']['darkborder'].'><TD WIDTH=30%><B>Rank</B></TD>
 		<TD WIDTH=70%><B>Name and Title</B></TD></TR>';
@@ -196,7 +196,7 @@ if($action == 'show')
 			{
 				if(is_int($showed_players / 2)) { $bgcolor = $config['site']['darkborder']; } else { $bgcolor = $config['site']['lightborder']; } $showed_players++;
 				$main_content .= '<TR BGCOLOR="'.$bgcolor.'"><TD valign="top">'.htmlspecialchars($rank->getName()).'</TD>
-				<TD><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=100%>';
+				<TD><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=70%>';
 				foreach($players_with_rank as $player)
 				{
 					$main_content .= '<TR><TD><FORM ACTION="?subtopic=guilds&action=change_nick&name='.urlencode($player->getName()).'" METHOD="post"><A HREF="?subtopic=characters&name='.urlencode($player->getName()).'">'.($player->isOnline() ? "<font color=\"green\">".htmlspecialchars($player->getName())."</font>" : "<font color=\"red\">".htmlspecialchars($player->getName())."</font>").'</A>';
@@ -221,10 +221,10 @@ if($action == 'show')
 		$main_content .= '</TABLE>';
 		$invited_list = $guild->listInvites();
 		if(count($invited_list) == 0)
-			$main_content .= '<BR><BR><TABLE BORDER=0 CELLSPACING=1 CELLPADDING=4 WIDTH=100%><TR BGCOLOR='.$config['site']['vdarkborder'].'><TD COLSPAN=2 CLASS=white><B>Invited Characters</B></TD></TR><TR BGCOLOR='.$config['site']['lightborder'].'><TD>No invited characters found.</TD></TR></TABLE>';
+			$main_content .= '<BR><BR><TABLE BORDER=0 CELLSPACING=1 CELLPADDING=4 WIDTH=70%><TR BGCOLOR='.$config['site']['vdarkborder'].'><TD COLSPAN=2 CLASS=white><B>Invited Characters</B></TD></TR><TR BGCOLOR='.$config['site']['lightborder'].'><TD>No invited characters found.</TD></TR></TABLE>';
 		else
 		{
-			$main_content .= '<BR><BR><TABLE BORDER=0 CELLSPACING=1 CELLPADDING=4 WIDTH=100%><TR BGCOLOR='.$config['site']['vdarkborder'].'><TD COLSPAN=2 CLASS=white><B>Invited Characters</B></TD></TR>';
+			$main_content .= '<BR><BR><TABLE BORDER=0 CELLSPACING=1 CELLPADDING=4 WIDTH=70%><TR BGCOLOR='.$config['site']['vdarkborder'].'><TD COLSPAN=2 CLASS=white><B>Invited Characters</B></TD></TR>';
 			$show_accept_invite = 0;
 			$showed_invited = 1;
 			foreach($invited_list as $invited_player)
@@ -547,6 +547,9 @@ if($action == 'deleteinvite')
 //-----------------------------------------------------------------------------//-----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------//-----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------//-----------------------------------------------------------------------------
+
+
+
 //show guild page
 if($action == 'invite')
 {
@@ -629,8 +632,16 @@ if($action == 'invite')
 	else
 		if($_REQUEST['todo'] == 'save')
 		{
+		$guildMembers = $SQL->query('SELECT COUNT(`gr`.`id`) AS `total` FROM `players` AS `p` LEFT JOIN `guild_ranks` AS `gr` ON `gr`.`id` = `p`.`rank_id` WHERE `gr`.`guild_id` = '.$guild->getId() )->fetch();
+
+		$slot_guild = $SQL->query('SELECT `slot` from `guilds` WHERE `id` = '.$guild->getId().' ')->fetch();
+
+		$quant_inicial_player_guild = 10;
+
+		$maximo_players_guild = ($quant_inicial_player_guild + $slot_guild['slot']);
+			$players_restantes = $maximo_players_guild - $guildMembers['total'];
 			$guild->invite($player);
-			$main_content .= '<TABLE BORDER=0 CELLSPACING=1 CELLPADDING=4 WIDTH=100%><TR BGCOLOR='.$config['site']['vdarkborder'].'><TD CLASS=white><B>Invite player</B></TD></TR><TR BGCOLOR='.$config['site']['darkborder'].'><TD WIDTH=100%>Player with name <b>'.htmlspecialchars($player->getName()).'</b> has been invited to your guild.</TD></TR></TABLE><br/><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=100%><FORM ACTION="?subtopic=guilds&action=show&guild='.$guild_id.'" METHOD=post><TR><TD><center><INPUT TYPE=image NAME="Back" ALT="Back" SRC="'.$layout_name.'/images/buttons/sbutton_back.gif" BORDER=0 WIDTH=120 HEIGHT=18></center></TD></TR></FORM></TABLE>';
+			$main_content .= '<TABLE BORDER=0 CELLSPACING=1 CELLPADDING=4 WIDTH=100%><TR BGCOLOR='.$config['site']['vdarkborder'].'><TD CLASS=white><B>Invite player</B></TD></TR><TR BGCOLOR='.$config['site']['darkborder'].'><TD WIDTH=100%>Player with name <b>'.htmlspecialchars($player->getName()).'</b> has been invited to your guild.<br><br>Essa guild ainda possui espaço atualmente para '.$players_restantes.' membros! Caso atinja o limite, conquiste mais slot guilds!</TD></TR></TABLE><br/><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=100%><FORM ACTION="?subtopic=guilds&action=show&guild='.$guild_id.'" METHOD=post><TR><TD><center><INPUT TYPE=image NAME="Back" ALT="Back" SRC="'.$layout_name.'/images/buttons/sbutton_back.gif" BORDER=0 WIDTH=120 HEIGHT=18></center></TD></TR></FORM></TABLE>';
 		}
 		else
 			$main_content .= '<TABLE BORDER=0 CELLSPACING=1 CELLPADDING=4 WIDTH=100%><TR BGCOLOR='.$config['site']['vdarkborder'].'><TD CLASS=white><B>Invite player</B></TD></TR><TR BGCOLOR='.$config['site']['darkborder'].'><TD WIDTH=100%><FORM ACTION="?subtopic=guilds&action=invite&guild='.$guild_id.'&todo=save" METHOD=post>Invite player with name:&nbsp;&nbsp;<INPUT TYPE="text" NAME="name">&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE=image NAME="Submit" ALT="Submit" SRC="'.$layout_name.'/images/buttons/sbutton_submit.gif" BORDER=0 WIDTH=120 HEIGHT=18></FORM></TD></TD></TR></TR></TABLE><br/><center><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=100%><TR><FORM ACTION="?subtopic=guilds&action=show&guild='.$guild_id.'" METHOD=post><TD><INPUT TYPE=image NAME="Back" ALT="Back" SRC="'.$layout_name.'/images/buttons/sbutton_back.gif" BORDER=0 WIDTH=120 HEIGHT=18></TD></TR></FORM></TABLE></center>';
@@ -661,6 +672,18 @@ if($action == 'acceptinvite')
 	{
 		if(!check_name($name))
 			$guild_errors[] = 'Invalid name format.';
+
+		$guildMembers = $SQL->query('SELECT COUNT(`gr`.`id`) AS `total` FROM `players` AS `p` LEFT JOIN `guild_ranks` AS `gr` ON `gr`.`id` = `p`.`rank_id` WHERE `gr`.`guild_id` = '.$guild->getId() )->fetch();
+
+		$slot_guild = $SQL->query('SELECT `slot` from `guilds` WHERE `id` = '.$guild->getId().' ')->fetch();
+
+		$quant_inicial_player_guild = 10;
+
+		$maximo_players_guild = ($quant_inicial_player_guild + $slot_guild['slot']);
+
+		if($guildMembers['total'] >= ( $maximo_players_guild ) )
+			$guild_errors[] = 'O maximo do numero de players que essa guild pode ter e : '.$maximo_players_guild.'! Contacte a guild para obter mais SLOTS GUILDS !';
+
 		if(empty($guild_errors))
 		{
 			$player = new Player();
